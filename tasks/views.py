@@ -1,4 +1,5 @@
 from django.shortcuts import render
+
 from rest_framework import viewsets
 from rest_framework.permissions import IsAuthenticated
 
@@ -12,20 +13,17 @@ class TaskViewSet(viewsets.ModelViewSet):
 
     permission_classes = [IsAuthenticated]
 
+
     def get_queryset(self):
 
-        return Task.objects.filter(user=self.request.user)
+        user = self.request.user
+
+        if user.role == "admin":
+            return Task.objects.all()
+
+        return Task.objects.filter(user=user)
+
 
     def perform_create(self, serializer):
 
         serializer.save(user=self.request.user)
-def get_queryset(self):
-
-    queryset = Task.objects.filter(user=self.request.user)
-
-    status = self.request.query_params.get('status')
-
-    if status:
-        queryset = queryset.filter(status=status)
-
-    return queryset
