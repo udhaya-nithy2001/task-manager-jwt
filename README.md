@@ -188,11 +188,11 @@ in browser or run using VS Code Live Server.
 
 ## Frontend UI
 
-![Frontend UI](screenshots/frontend-ui.png)
+![Frontend UI](./screenshots/frontend-ui.png)
 
 ## Swagger API Docs
 
-![Swagger Docs](screenshots/swagger-docs.png)
+![Swagger Docs](./screenshots/swagger-docs.png)
 # Author
 
 Udhayanithy S
