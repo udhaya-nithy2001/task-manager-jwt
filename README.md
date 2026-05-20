@@ -184,7 +184,15 @@ in browser or run using VS Code Live Server.
 - Production Deployment
 
 ---
+# Screenshots
 
+## Frontend UI
+
+![Frontend UI](screenshots/frontend-ui.png)
+
+## Swagger API Docs
+
+![Swagger Docs](screenshots/swagger-docs.png)
 # Author
 
 Udhayanithy S
