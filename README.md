@@ -193,6 +193,8 @@ in browser or run using VS Code Live Server.
 ## Swagger API Docs
 
 ![Swagger Docs](./screenshots/swagger-docs.png)
+
+
 # Author
 
 Udhayanithy S
